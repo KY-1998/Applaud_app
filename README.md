@@ -1,6 +1,6 @@
 This is applaudind app.
 
-## 起動手順
+# How to start
 
 #### At first, you must have `Node.js` to start this app. If you don't have it, please install `Node.js`.
 
@@ -17,6 +17,8 @@ and then you can run:
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+## To Fringe81
+
 初回起動時に、ユーザをローカルストレージに保存するための画面が出てきます。<br />
 
 追加を押してユーザを追加し、保存でアプリスタートとなります。<br />
@@ -26,7 +28,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 /*----------------------------------------------------------------------*/
 
-## 自己採点
+# 自己採点
 以下、一つの項目に対し10点満点で採点しました。<br />
 ### `● ヘッダーに初期状態で現在ユーザの名前/画像/拍手出来るポイント:100/拍手されたポイント:0が表示される`
 ユーザ登録後、初期状態でヘッダーに上記のものが表示されます。<br />
