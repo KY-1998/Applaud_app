@@ -12,10 +12,10 @@ class Point extends React.Component{
     /* 採点データの作成 */
     const pointList=[];
     for(let i = 0; i < likeList.length; i++){
-      /* 指定した投稿インデックスが拍手データ内に見つかった時 */
-      if(likeList[i].postId == postId){
+      /* 指定した投稿IDが拍手データ内に見つかった時 */
+      if(likeList[i].postId === postId){
         /* 拍手が0でない時 */
-        if(likeList[i].goodNum != 0){
+        if(likeList[i].goodNum !== 0){
           /* 拍手したユーザの名前とその数を保存 */
           var data = {
             name: userList[likeList[i].userIndex].name,

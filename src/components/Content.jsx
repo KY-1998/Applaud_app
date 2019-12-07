@@ -15,13 +15,13 @@ class Content extends React.Component{
     const userIndex = this.props.userIndex;
 
     /* 投稿者または褒められた相手が現在のユーザでない時 */
-    if(post.userIndex != userIndex
-      && post.targetIndex != userIndex){
+    if(post.userIndex !== userIndex
+      && post.targetIndex !== userIndex){
         /* 拍手をもうすでにしたことがあればtrue */
         let flag = false;
         for(let i = 0; i < likeList.length; i++){
           /* 拍手の記録がある時 */
-          if(likeList[i].postId == post.id && likeList[i].userIndex == this.props.userIndex){
+          if(likeList[i].postId === post.id && likeList[i].userIndex === this.props.userIndex){
             /* 現在のユーザが　15回以上拍手していない　かつ　使えるポイントがまだあるとき */
             if(likeList[i].goodNum < 15
                 && userList[userIndex].point_canBeUsed > 0){
@@ -38,7 +38,7 @@ class Content extends React.Component{
         }
         /* 拍手の記録がない時 */
         if(!flag){
-          /* 投稿インデックスと現在のユーザインデックスを保存し、拍手を１にする */
+          /* 投稿IDと現在のユーザインデックスを保存し、拍手を１にする */
           const data = {
             postId: post.id,
             userIndex: this.props.userIndex,
@@ -61,8 +61,8 @@ class Content extends React.Component{
   likeNum(likeList, postId){
     let cnt = 0;
     for(let i = 0; i < likeList.length; i++){
-      /* 指定した投稿インデックスが拍手データ内で見つかった時 */
-      if(likeList[i].postId == postId){
+      /* 指定した投稿IDが拍手データ内で見つかった時 */
+      if(likeList[i].postId === postId){
         /* カウント */
         cnt += likeList[i].goodNum;
       }
