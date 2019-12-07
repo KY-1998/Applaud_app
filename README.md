@@ -2,17 +2,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## 起動手順
 
-#### At first, you must have Node.js to start this app. So if you don't, please install `Node.js`.
+#### At first, you must have Node.js to start this app. If you don't, please install `Node.js`.
 
-### after install Node.js
+### after installing Node.js
 
-In the project directory, you can install `the package` written in package.json:
+In the project directory, you can install `the package` that is written in package.json:
 
-### `npm install`
+### `npm install (command)`
 
 and then you can run:
 
-### `npm start`
+### `npm start (command)`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
