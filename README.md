@@ -1,10 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is applaudind app.
 
 ## 起動手順
 
-#### At first, you must have Node.js to start this app. If you don't, please install `Node.js`.
+#### At first, you must have `Node.js` to start this app. If you don't have it, please install `Node.js`.
 
-### after installing Node.js
+### After installing Node.js
 
 In the project directory, you can install `the package` that is written in package.json:
 
