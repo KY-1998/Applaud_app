@@ -4,7 +4,6 @@ import Target from './Target';
 import Table from './Table';
 import Post from './Post';
 import Setting from './Setting';
-import './App.css';
 
 class App extends React.Component{
   constructor(props) {
@@ -43,7 +42,7 @@ class App extends React.Component{
     /* ユーザリストをローカルデータから取得 */
     const userList = JSON.parse(localStorage.getItem('userData'));
 
-    
+
 
     if(userList){
       return (
@@ -54,8 +53,7 @@ class App extends React.Component{
               <User
                 user={userList[this.state.userIndex]}
               />
-              <select defaultValue='default' onChange = {(event) => {this.handleUserChange(event); this.resetTarget();}}>
-                <option value = 'default' disabled>User</option>
+              <select onChange = {(event) => {this.handleUserChange(event); this.resetTarget();}}>
                 {userList.map((userItem, index) => {
                   return(
                     <option key={index} value={index}>
