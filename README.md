@@ -1,4 +1,4 @@
-This is applaudind app.
+### This is applaudind app.　I recommend `Chrome` as a browser.
 
 # How to start
 
