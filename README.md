@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 #### At first, you must have Node.js to start this app. So if you don't, please install `Node.js`.
 
+### after install Node.js
+
 In the project directory, you can install `the package` written in package.json:
 
 ### `npm install`
