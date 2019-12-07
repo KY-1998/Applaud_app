@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## 起動手順
 
-In the project directory:
+In the project directory, you can install `the package` written in package.json:
 
 ### `npm install`
 
