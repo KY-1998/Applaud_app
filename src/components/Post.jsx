@@ -81,7 +81,7 @@ class Post extends React.Component{
     return(
       <form onSubmit = {()=>{this.handlePostChange(); this.props.loadWindow(); }}>
         {/* ミス（エラーメッセージ）の表示 */}
-        <p className = 'postMiss'>{(this.state.miss != '') && this.state.miss}</p>
+        <p className = 'postMiss'>{(this.state.miss !== '') && this.state.miss}</p>
         {/* テキスト入力部分 */}
         <span className = 'postText'>
           {this.props.targetIndex < 0 ? <textarea value = "褒める相手を選んでください" disabled="disabled"/>

@@ -13,6 +13,7 @@
   width: 120px;
   height: 120px;
   border-radius: 150px;
+  line-height: 10;
 }
 /*App.jsのCSS*/
 select{
@@ -149,6 +150,7 @@ select{
   height: 170px;
 }
 .userCard img{
+  margin-top: 25px;
 }
 .userCardText{
   position: relative;
@@ -200,6 +202,7 @@ select{
   font-size: 18px;
   font-weight: 500;
   outline: none;
+  background-color: rgba(0,0,0,0);
 }
 .postText textarea:focus{
   border: none;
@@ -213,7 +216,8 @@ select{
 	height: 100%;
 	content: '';
 	transition: 0.3s;
-	background-color: #76c5174d;
+	background-color: #daf7b6;
+  z-index: -1;
 }
 .postText textarea ~ .focus-bkg::after{
   position: absolute;
@@ -223,16 +227,17 @@ select{
 	height: 100%;
 	content: '';
 	transition: 0.3s;
-	background-color: #76c5174d;
+	background-color: #daf7b6;
+  z-index: -1;
 }
 .postText textarea:focus ~ .focus-bkg::before{
-  width: 49.2%;
+  width: 55%;
   height: 120%;
   border: solid 2px #8bc34a;
   border-right: none;
 }
 .postText textarea:focus ~ .focus-bkg::after{
-  width: 50%;
+  width: 55%;
   height: 120%;
   border: solid 2px #8bc34a;
   border-left: none;

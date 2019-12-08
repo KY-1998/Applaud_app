@@ -1,4 +1,4 @@
-### This is applaudind app.　I recommend `Chrome` as a browser.
+### This is applauding app.　I recommend `Chrome` as a browser.
 
 # How to start
 
@@ -24,6 +24,18 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 追加を押してユーザを追加し、保存でアプリスタートとなります。<br />
 
 画面の遷移は不要とのことでしたが、初回だけ遷移します。すみません。<br />
+
+
+
+####　ユーザの追加について
+
+`・ユーザ名`<br />
+ユーザの名前を入れてください。
+<br />
+`・画像名`<br />
+user_imgフォルダ(publicフォルダの中にあります)に画像を保存していただき、その保存した画像名を入力してください。<br />
+##### ＊1~10までの番号が付いたpngをすでに用意しているので良ろしければお使いください。（例：1.png）
+<br />
 
 
 

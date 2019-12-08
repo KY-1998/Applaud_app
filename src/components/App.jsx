@@ -24,7 +24,7 @@ class App extends React.Component{
   }
   /* 現在のユーザの場合true */
   userFlag(index){
-    if(index == this.state.userIndex){return true;}
+    if(index === this.state.userIndex){return true;}
     else {return false;}
   }
   /* 相手の再設定（ユーザによって褒める相手が変わる） */
@@ -90,7 +90,7 @@ class App extends React.Component{
                         {targetItem.name}
                       </option>
                     );
-                  }
+                  }else return 0;
                 })}
               </select>
             </div>

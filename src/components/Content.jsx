@@ -94,9 +94,9 @@ class Content extends React.Component{
         <div className='tableTop'>
           {/* 投稿データの表示 */}
           <div className='tableCard'>
-            <img src={`${process.env.PUBLIC_URL}/${userList[post.userIndex].image}`} />
+            <img src={`${process.env.PUBLIC_URL}/user_img/${userList[post.userIndex].image}`} alt="UserImage" />
             <FontAwesomeIcon className='fontArrow' size='4x' icon={['fas', 'arrow-right']} />
-            <img src={`${process.env.PUBLIC_URL}/${userList[post.targetIndex].image}`} />
+            <img src={`${process.env.PUBLIC_URL}/user_img/${userList[post.targetIndex].image}`} alt="TargetImage" />
           </div>
           <div className='tableText'>{post.text}</div>
         </div>
