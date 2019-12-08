@@ -15,13 +15,12 @@ class Content extends React.Component{
     const userIndex = this.props.userIndex;
 
     /* 投稿者または褒められた相手が現在のユーザでない時 */
-    /* ===にするとバグります*/
     if(post.userIndex != userIndex && post.targetIndex != userIndex){
         /* 拍手をもうすでにしたことがあればtrue */
         let flag = false;
         for(let i = 0; i < likeList.length; i++){
           /* 拍手の記録がある時 */
-          if(likeList[i].postId === post.id && likeList[i].userIndex === this.props.userIndex){
+          if(likeList[i].postId === post.id && likeList[i].userIndex == this.props.userIndex){
             /* 現在のユーザが　15回以上拍手していない　かつ　使えるポイントがまだあるとき */
             if(likeList[i].goodNum < 15
                 && userList[userIndex].point_canBeUsed > 0){
