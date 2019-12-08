@@ -9,8 +9,8 @@ Go to the site -> [https://nodejs.org/ja/download/] and download.
 # Usage
 
 #### At first, you must have `Node.js` to start this app. If you don't have it, please install `Node.js`.
-
-After installing Node.js:
+```
+After installing Node.j:
 
 ### `$ git clone https://github.com/KY-1998/Applaud_app.git`
 
@@ -24,7 +24,7 @@ After installing Node.js:
 ### `$ npm start`
 
  Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
+```
 ## To Fringe81
 
 初回起動時に、ユーザをローカルストレージに保存するための画面が出てきます。<br />
