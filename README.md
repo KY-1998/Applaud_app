@@ -1,20 +1,28 @@
 ### This is applauding app.　I recommend `Chrome` as a browser.
 
-# How to start
+# Requirement
+`・　Node.js`
+
+# Installation
+Go to the site -> [https://nodejs.org/ja/download/] and download.
+
+# Usage
 
 #### At first, you must have `Node.js` to start this app. If you don't have it, please install `Node.js`.
 
 ### After installing Node.js
 
-In the project directory, you can install `the package` that is written in package.json:
+### `$ git clone https://github.com/KY-1998/Applaud_app.git`
 
-### `npm install (command)`
+In the project directory(Applaud_app):
+
+### `$ npm install`
+ ＊installing `the package` that is written in package.json.<br />
 
 and then you can run:
 
-### `npm start (command)`
+### `$ npm start`
 
-Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## To Fringe81
@@ -23,8 +31,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 追加を押してユーザを追加し、保存でアプリスタートとなります。<br />
 
-画面の遷移は不要とのことでしたが、初回だけ遷移します。すみません。<br />
-
+画面の遷移は不要とのことでしたがユーザ追加が楽になると思いますので、初回だけ遷移します。すみません。<br />
 
 
 #### ユーザの追加について
