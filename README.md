@@ -27,7 +27,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
 
-####　ユーザの追加について
+#### ユーザの追加について
 
 `・ユーザ名`<br />
 ユーザの名前を入れてください。
