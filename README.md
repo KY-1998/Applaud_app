@@ -14,16 +14,16 @@ Go to the site -> [https://nodejs.org/ja/download/] and download.
 
 ### `$ git clone https://github.com/KY-1998/Applaud_app.git`
 
-In the project directory(Applaud_app):
+### In the project directory(Applaud_app):
 
 ### `$ npm install`
  ＊installing `the package` that is written in package.json.<br />
 
-and then you can run:
+### and then you can run:
 
 ### `$ npm start`
 
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## To Fringe81
 
