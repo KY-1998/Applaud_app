@@ -18,7 +18,8 @@ After installing Node.js:
 
 In the project directory(`Applaud_app`):
 
-#### `$ npm install   (*installing the package that is written in package.json.)`
+#### `$ npm install`   
+(＊installing the package that is written in package.json.)
 
 and then you can run:
 
