@@ -10,7 +10,7 @@ Go to the site -> [https://nodejs.org/ja/download/] and download.
 
 #### At first, you must have `Node.js` to start this app. If you don't have it, please install `Node.js`.
 
-After installing Node.j:
+After installing Node.js:
 
 #### `$ git clone https://github.com/KY-1998/Applaud_app.git`
 
