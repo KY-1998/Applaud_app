@@ -14,7 +14,9 @@ After installing Node.j:
 
 #### `$ git clone https://github.com/KY-1998/Applaud_app.git`
 
-In the project directory(Applaud_app):
+#### `$ cd Applaud_app`
+
+In the project directory(`Applaud_app`):
 
 #### `$ npm install   (*installing the package that is written in package.json.)`
 
