@@ -15,8 +15,8 @@ class Content extends React.Component{
     const userIndex = this.props.userIndex;
 
     /* 投稿者または褒められた相手が現在のユーザでない時 */
-    if(post.userIndex !== userIndex
-      && post.targetIndex !== userIndex){
+    /* ===にするとバグります*/
+    if(post.userIndex != userIndex && post.targetIndex != userIndex){
         /* 拍手をもうすでにしたことがあればtrue */
         let flag = false;
         for(let i = 0; i < likeList.length; i++){
@@ -31,6 +31,8 @@ class Content extends React.Component{
               userList[userIndex].point_canBeUsed -= 2;
               /* 投稿した人の受けとったポイント数を増やす */
               userList[post.userIndex].point_received++;
+              /* 投稿された人の受けとったポイント数を増やす */
+              userList[post.targetIndex].point_received++;
             }
             flag = true;
             break;
@@ -50,6 +52,8 @@ class Content extends React.Component{
           userList[userIndex].point_canBeUsed -= 2;
           /* 投稿したユーザの受け取った拍手を増やす */
           userList[post.userIndex].point_received++;
+          /* 投稿された人の受けとったポイント数を増やす */
+          userList[post.targetIndex].point_received++;
         }
         /* ローカルストレージに保存 */
         localStorage.setItem('userData', JSON.stringify(userList));
