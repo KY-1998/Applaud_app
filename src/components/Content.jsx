@@ -21,6 +21,8 @@ class Content extends React.Component{
         for(let i = 0; i < likeList.length; i++){
           /* 拍手の記録がある時 */
           if(likeList[i].postId === post.id && likeList[i].userIndex == this.props.userIndex){
+            /* 拍手の記録があった */
+            flag = true;
             /* 現在のユーザが　15回以上拍手していない　かつ　使えるポイントがまだあるとき */
             if(likeList[i].goodNum < 15
                 && userList[userIndex].point_canBeUsed > 0){
@@ -33,12 +35,11 @@ class Content extends React.Component{
               /* 投稿された人の受けとったポイント数を増やす */
               userList[post.targetIndex].point_received++;
             }
-            flag = true;
             break;
           }
         }
-        /* 拍手の記録がない時 */
-        if(!flag){
+        /* 拍手の記録がない時かつ使えるポイントがまだある時 */
+        if(!flag && userList[userIndex].point_canBeUsed > 0){
           /* 投稿IDと現在のユーザインデックスを保存し、拍手を１にする */
           const data = {
             postId: post.id,
